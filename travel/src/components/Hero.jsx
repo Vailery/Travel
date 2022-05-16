@@ -13,26 +13,25 @@ const Hero = () => {
         muted
       />
       <div className="absolute w-full h-full top-0 left-0 bg-gray-900/30"></div>
-      <div className="absolute top-0 w-full h-full flex flex-col justify-center text-center text-white p-4">
+      <div className="absolute top-0 w-full h-full flex flex-col justify-center text-center text-white p-4 dark:text-black transition duration-500">
         <h1>First Class Travel</h1>
         <h2 className="py-4">Top 1% Locations Worldwide</h2>
         <form
-          className="flex justify-between items-center max-w-[700px] mx-auto w-full border p-1 first-letter
-        rounded-md text-black bg-gray-100/90"
+          className="flex justify-between items-center max-w-[700px] mx-auto w-full border dark:border-black p-1 first-letter
+        rounded-md text-black bg-gray-100/90 dark:bg-black transition duration-500"
         >
           <div>
             <input
-              className="bg-transparent w-[300px] sm:w-[400px] font-[Poppins] focus:outline-none"
+              className="bg-transparent w-[300px] sm:w-[400px] font-[Poppins] focus:outline-none dark:placeholder:text-white"
               type="text"
               placeholder="Search Destinations"
             />
           </div>
           <div>
-            <button>
+            <button className="border-0">
               <AiOutlineSearch
                 size={20}
-                className="icon"
-                style={{ color: "#ffffff" }}
+                className="text-white dark:text-black transition duration-500"
               />
             </button>
           </div>

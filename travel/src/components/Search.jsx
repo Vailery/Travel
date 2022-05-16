@@ -4,7 +4,7 @@ import { MdOutlineTravelExplore } from "react-icons/md";
 
 const Search = () => {
   return (
-    <div className="max-w-[1240px] mx-auto grid lg:grid-cols-3 gap-4 px-4 py-16">
+    <div className="max-w-[1240px] mx-auto grid lg:grid-cols-3 gap-4 px-4 py-16 dark:text-white transition duration-500">
       <div className="lg:col-span-2 flex flex-col justify-evenly">
         <div>
           <h2>LUXURY INCLUDED VACATIONS FOR TWO PEOPLE</h2>
@@ -24,7 +24,7 @@ const Search = () => {
 
         <div className="grid sm:grid-cols-2 gap-8 py-4">
           <div className="flex flex-col lg:flex-row items-center text-center">
-            <button>
+            <button className="border-0">
               <RiCustomerService2Fill size={50} />
             </button>
 
@@ -37,7 +37,7 @@ const Search = () => {
             </div>
           </div>
           <div className="flex flex-col lg:flex-row items-center text-center">
-            <button>
+            <button className="border-0">
               <MdOutlineTravelExplore size={50} />
             </button>
 
@@ -63,7 +63,7 @@ const Search = () => {
           <div className="flex flex-col my-2">
             <label>Destination</label>
 
-            <select className="border rounded-md p-2">
+            <select className="border rounded-md p-2 dark:text-black">
               <option>Grande Antigua</option>
               <option>Key West</option>
               <option>Maldives</option>
@@ -74,16 +74,24 @@ const Search = () => {
           <div className="flex flex-col my-4">
             <label>Check-In</label>
 
-            <input className="border rounded-md p-2" type="date" />
+            <input
+              className="border rounded-md p-2 dark:text-black"
+              type="date"
+            />
           </div>
 
           <div className="flex flex-col my-2">
             <label>Check-Out</label>
 
-            <input className="border rounded-md p-2" type="date" />
+            <input
+              className="border rounded-md p-2 dark:text-black"
+              type="date"
+            />
           </div>
 
-          <button className="w-full my-4">Rates & Availabilities</button>
+          <button className="w-full my-4 dark:border-black">
+            Rates & Availabilities
+          </button>
         </form>
       </div>
     </div>

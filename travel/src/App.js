@@ -9,7 +9,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div>
+    <div className="dark:bg-black transition duration-500">
       <Navbar />
       <Hero />
       <Destinations />

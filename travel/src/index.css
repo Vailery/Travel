@@ -41,4 +41,8 @@
   .icon {
     @apply text-2xl cursor-pointer;
   }
+
+  .display-none {
+    @apply hidden;
+  }
 }
