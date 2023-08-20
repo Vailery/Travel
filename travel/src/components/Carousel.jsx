@@ -12,6 +12,8 @@ export default function Carousel() {
 
   const slideRef = useRef();
 
+  console.log(".");
+
   const handleOnNextClick = () => {
     const productsLength = sliderData.length;
     count = (idx + productsLength + 1) % productsLength;
